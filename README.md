@@ -7,7 +7,7 @@ Current build status: [![Build Status](https://travis-ci.org/Bendihossan/Phitter
 
 Basic Usage
 ====================
-Pinfo! uses the Symfony Console component to register commands.
+Phitter! uses the Symfony Console component to register commands.
 
 Run ``php bin/phitter`` to find out the available commands:
 ```
@@ -25,7 +25,7 @@ Coming soon!
 ====================
 
 * More options
-* Bundled ``pinfo.phar`` in the bin/ directory.
+* Bundled ``phitter.phar`` in the bin/ directory.
 
 Contribute
 ====================
