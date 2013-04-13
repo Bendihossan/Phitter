@@ -1,5 +1,4 @@
 <?php
-// @codingStandardsIgnoreStart
 /*
  * This file is taken from the Composer project.
  *
@@ -24,4 +23,3 @@ if ((!$loader = includeIfExists(__DIR__.'/../vendor/autoload.php')) && (!$loader
 }
 
 return $loader;
-// @codingStandardsIgnoreEnd

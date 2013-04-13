@@ -9,4 +9,4 @@ before_script:
   - phpenv rehash
 
 script:
-  - phpcs --standard=PSR2 src
+  - phpcs --standard=PSR2 src/Bendihossan/Phitter
