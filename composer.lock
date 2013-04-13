@@ -1,5 +1,5 @@
 {
-    "hash": "e3d28cf83206e844590bce8fa2ab6a6c",
+    "hash": "c4ecd8a1b5752333ae575ea6f4ec47b3",
     "packages": [
         {
             "name": "symfony/console",
@@ -8,12 +8,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "04f0be7b0d08fb45591f35b011eb5d3ec507a059"
+                "reference": "74049e36e2e73ca2ec069c9be86d01ba422d44ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/04f0be7b0d08fb45591f35b011eb5d3ec507a059",
-                "reference": "04f0be7b0d08fb45591f35b011eb5d3ec507a059",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/74049e36e2e73ca2ec069c9be86d01ba422d44ea",
+                "reference": "74049e36e2e73ca2ec069c9be86d01ba422d44ea",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-12 15:23:00"
+            "time": "2013-04-13 14:06:01"
         }
     ],
     "packages-dev": [

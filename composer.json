@@ -1,4 +1,7 @@
 {
+    "name": "bendihossan/phitter",
+    "description": "Simple Twitter client written in PHP using the Symfony2 Console component.",
+    "license": "New BSD License",
     "require": {
         "symfony/console": "2.3.*@dev"
     },
