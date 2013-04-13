@@ -8,5 +8,5 @@ before_script:
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
 
-after_script:
+script:
   - phpcs --standard=PSR2 src
