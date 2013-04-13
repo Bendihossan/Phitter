@@ -21,7 +21,7 @@ class UserShowCommand extends PhitterCommand
                 InputArgument::REQUIRED,
                 'The ID of the user for whom to return results for.'
             )
-            ->setDescription('Lists latest tweets from a user.')
+            ->setDescription('Lists info for a user.')
             ->setHelp('The <info>user:show</info> takes an required argument for a username.');
 
         // Load parameters

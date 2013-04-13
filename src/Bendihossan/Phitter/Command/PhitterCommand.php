@@ -6,12 +6,13 @@ use Symfony\Component\Console\Command\Command;
 
 class PhitterCommand extends Command
 {
-    protected  $CONSUMER_KEY = null;
-    protected  $CONSUMER_SECRET = null;
-    protected  $TWITTER_TOKEN = null;
-    protected  $TWITTER_TOKEN_SECRET = null;
+    protected $CONSUMER_KEY = null;
+    protected $CONSUMER_SECRET = null;
+    protected $TWITTER_TOKEN = null;
+    protected $TWITTER_TOKEN_SECRET = null;
 
-    protected function setup() {
+    protected function setup()
+    {
         $parameters = file_get_contents(__DIR__.'/../../../../Resources/config/parameters.json');
         $parameters = json_decode($parameters, true);
 

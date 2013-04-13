@@ -22,7 +22,7 @@ class UserTimelineCommand extends PhitterCommand
                 'The ID of the user for whom to return results for. Defaults value is the logged in user.'
             )
             ->setDescription('Lists latest tweets from a user. Defaults to you.')
-            ->setHelp('The <info>user:timeline</info> takes an optional argument for a username. This defaults to you.');
+            ->setHelp('The <info>user:timeline</info> takes an optional argument for a username. Defaults to you.');
 
         // Load parameters
         parent::setup();
