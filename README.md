@@ -16,6 +16,7 @@ home
   home:mentions   Lists latest mentions for this user.
   home:retweets   Lists latest retweets for this user.
   home:timeline   Lists latest tweets from your followers.
+  home:tweet      Post a new tweet.
 user
   user:show       Lists info for a user.
   user:timeline   Lists latest tweets from a user. Defaults to you.
