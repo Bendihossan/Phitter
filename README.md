@@ -31,11 +31,12 @@ Coming soon!
 Contribute
 ====================
 1. Fork the repository and download the source to your development workspace and run ``bin/composer install``.
-2. Checkout a branch for your code
-3. Write the logic for your command in ``src/Bendihossan/Phitter/Command``.
-4. Register your new command in ``bin/phitter``.
-5. Write unit tests for your command.
-6. Commit and push your code to GitHub, make a Pull Request to the Phitter! project.
+2. Copy ``Resources/config/parameters.json.dist`` to ``Resources/config/parameters.json`` and populate with your own Twitter tokens.
+3. Checkout a branch for your code
+4. Write the logic for your command in ``src/Bendihossan/Phitter/Command``.
+5. Register your new command in ``bin/phitter``.
+6. Write unit tests for your command.
+7. Commit and push your code to GitHub, make a Pull Request to the Phitter! project.
 
 Contact
 ====================
