@@ -1,0 +1,8 @@
+{
+    "tokens": {
+        "CONSUMER_KEY": "your-key",
+        "CONSUMER_SECRET": "your-key",
+        "TWITTER_TOKEN": "your-key",
+        "TWITTER_TOKEN_SECRET": "your-key"
+    }
+}
