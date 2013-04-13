@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+require __DIR__.'/../src/bootstrap.php';
+
+use Symfony\Component\Console\Application;
+use Bendihossan\Phitter\Command\HomeTimelineCommand;
+use Bendihossan\Phitter\Command\UserTimelineCommand;
+use Bendihossan\Phitter\Command\UserShowCommand;
+use Bendihossan\Phitter\Command\MentionsTimelineCommand;
+use Bendihossan\Phitter\Command\RetweetsTimelineCommand;
+
+$console = new Application();
+
+$console->add(new HomeTimelineCommand());
+$console->add(new UserTimelineCommand());
+$console->add(new UserShowCommand());
+$console->add(new MentionsTimelineCommand());
+$console->add(new RetweetsTimelineCommand());
+
+$console->run();
