@@ -25,8 +25,7 @@ user
 Coming soon!
 ====================
 
-* More options
-* Bundled ``phitter.phar`` in the bin/ directory.
+* More API endpoints
 
 Contribute
 ====================
