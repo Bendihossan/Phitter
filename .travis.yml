@@ -1,0 +1,12 @@
+language: php
+php:
+  - "5.4"
+  - "5.3"
+
+before_script:
+  - php bin/composer install
+  - pear install pear/PHP_CodeSniffer
+  - phpenv rehash
+
+after_script:
+  - phpcs --standard=PSR2 src
