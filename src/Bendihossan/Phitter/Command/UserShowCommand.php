@@ -36,22 +36,12 @@ class UserShowCommand extends PhitterCommand
         $name = $input->getArgument('username');
 
         if (!isset($name)) {
-            $username = '';
+            $parameters = '';
         } else {
-            $username = '?screen_name='.$name;
+            $parameters = '?screen_name='.$name;
         }
 
-        $oauth = new \OAuth(
-            $this->CONSUMER_KEY,
-            $this->CONSUMER_SECRET,
-            OAUTH_SIG_METHOD_HMACSHA1,
-            OAUTH_AUTH_TYPE_URI
-        );
-
-        $oauth->setToken($this->TWITTER_TOKEN, $this->TWITTER_TOKEN_SECRET);
-        $oauth->fetch('http://api.twitter.com/1.1/users/show.json'.$username);
-
-        $user = json_decode($oauth->getLastResponse(), true);
+        $user = $this->makeApiGetRequest('users/show', $parameters);
 
         $output->writeln('<info>Name</info>: '. $user['name']);
         $output->writeln('<info>Description</info>: '.$user['description']);
