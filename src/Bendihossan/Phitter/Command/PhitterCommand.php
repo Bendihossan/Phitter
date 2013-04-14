@@ -12,7 +12,7 @@ class PhitterCommand extends Command
     protected $TWITTER_TOKEN_SECRET = null;
 
     protected $oauth = null;
-    protected $apiUrl = 'http://api.twitter.com/1.1/';
+    protected $apiUrl = 'https://api.twitter.com/1.1/';
 
     protected function setup()
     {
