@@ -28,18 +28,7 @@ class RetweetsTimelineCommand extends PhitterCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
-        $oauth = new \OAuth(
-            $this->CONSUMER_KEY,
-            $this->CONSUMER_SECRET,
-            OAUTH_SIG_METHOD_HMACSHA1,
-            OAUTH_AUTH_TYPE_URI
-        );
-
-        $oauth->setToken($this->TWITTER_TOKEN, $this->TWITTER_TOKEN_SECRET);
-        $oauth->fetch('https://api.twitter.com/1.1/statuses/retweets_of_me.json?count=10');
-
-        $tweets = json_decode($oauth->getLastResponse(), true);
+        $tweets = $this->makeApiGetRequest('statuses/retweets_of_me', '?count=10');
 
         foreach ($tweets as $tweet) {
             $output->writeln($tweet['text']);

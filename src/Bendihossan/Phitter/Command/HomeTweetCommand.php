@@ -42,29 +42,12 @@ class HomeTweetCommand extends PhitterCommand
             exit(1);
         }
 
-        $oauth = new \OAuth(
-            $this->CONSUMER_KEY,
-            $this->CONSUMER_SECRET,
-            OAUTH_SIG_METHOD_HMACSHA1,
-            OAUTH_AUTH_TYPE_URI
-        );
+        $tweetSuccess = $this->makeApiPostRequest('statuses/update', $tweet);
 
-        $oauth->setToken($this->TWITTER_TOKEN, $this->TWITTER_TOKEN_SECRET);
-
-        $oauth->fetch(
-            'https://api.twitter.com/1.1/statuses/update.json',
-            array(
-                'status' => $tweet
-            ),
-            OAUTH_HTTP_METHOD_POST
-        );
-
-        $tweet = json_decode($oauth->getLastResponse(), true);
-
-        if (!isset($tweet['text'])) {
+        if (!$tweetSuccess) {
             $output->writeln('<error>Failed to send tweet!</error>');
         } else {
-            $output->writeln($tweet['text']);
+            $output->writeln('"'.$tweet.'" has been sent!');
         }
     }
 }
