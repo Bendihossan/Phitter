@@ -3,6 +3,8 @@
     "description": "Simple Twitter client written in PHP using the Symfony2 Console component.",
     "license": "New BSD License",
     "require": {
+        "php": ">=5.3.2",
+        "ext-OAuth": "1.2.*",
         "symfony/console": "2.3.*@dev"
     },
     "autoload": {
