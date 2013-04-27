@@ -7,9 +7,17 @@
         "ext-OAuth": "1.2.*",
         "symfony/console": "2.3.*@dev"
     },
+    "authors": [
+        {
+            "name": "Steffan harries",
+            "email": "contact@steffanharries.me.uk",
+            "homepage": "http://www.steffanharries.me.uk"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "Bendihossan\\": "src/"
         }
-    }
+    },
+    "bin": ["bin/phitter"]
 }
