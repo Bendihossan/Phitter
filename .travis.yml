@@ -4,9 +4,10 @@ php:
   - "5.3"
 
 before_script:
-  - php bin/composer install
   - pear install pear/PHP_CodeSniffer
+  - pecl install oauth
   - phpenv rehash
+  - php bin/composer install
 
 script:
   - phpcs --standard=PSR2 src/Bendihossan/Phitter
