@@ -26,6 +26,7 @@ Coming soon!
 ====================
 
 * More API endpoints
+* Tests
 
 Contribute
 ====================
